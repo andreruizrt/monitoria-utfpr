@@ -30,7 +30,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Forum</a>
+                        <a class="nav-link" href="forum.html">Forum</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -58,27 +58,31 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="row" style="">
-            <div class="col">
-                <div class="container-fluid">
-                    <img src="../images/homeImage.gif" class="img-fluid" alt="...">
-                </div>
-            </div>
-            <div id="login-container" class="col" style="">
-                <div class="mb-3">
-                    <label for="emailInput" class="form-label">Email ou usuário:</label>
-                    <input type="email" class="form-control" id="emailInput" 
-                        placeholder="Digite email ou usuário">
-                </div>
-                <div class="mb-3">
-                    <label for="passwordInput" class="form-label">Senha:</label>
-                    <input type="password" class="form-control" id="exampleFormControlInput1"
-                        placeholder="Senha">
-                </div>
-                <button class="btn btn-primary" type="submit">Entrar</button>
+    <div class="d-flex flex-row .justify-content-lg-between">
+        <div class="d-flex">
+            <div class="container-fluid">
+                <img src="../images/homeImage.gif" class="img-fluid" alt="...">
             </div>
         </div>
+        <div id="p-2" class="d-flex align-items-center">
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                  <label for="inputEmail">Email ou usuário:</label>
+                  <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Digite email ou usuário">
+                </div>
+                <div class="form-group">
+                  <label for="inputPassword">Senha:</label>
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Senha">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="checkManterConectado">
+                  <label class="form-check-label" for="checkManterConectado">Manter conectado</label>
+                </div>
+                <p>Não possui conta? <a href="#">cadastrar</a></p>
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </form>
+        </div>
+    </div>
 
 </body>
 
